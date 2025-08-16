@@ -102,3 +102,12 @@ dist
 
 # TernJS port file
 .tern-port
+
+
+### DotnetCore ###
+# .NET Core build folders
+bin/
+obj/
+
+
+.vs/
