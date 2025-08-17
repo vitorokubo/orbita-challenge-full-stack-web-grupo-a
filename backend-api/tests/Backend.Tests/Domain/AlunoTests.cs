@@ -2,7 +2,7 @@
 using Backend.Domain;
 using Xunit;
 
-namespace Backend.Tests;
+namespace Backend.Tests.Domain;
 
 public class AlunoTests
 {
@@ -30,6 +30,7 @@ public class AlunoTests
     [InlineData("Vitor", "", "12345", "11122233344")]
     [InlineData("Vitor", "vitor@example.com", "", "11122233344")]
     [InlineData("Vitor", "vitor@example.com", "12345", "")]
+
     public void CriarAluno_ComDadosInvalidos_DeveLancarArgumentException(string nome, string email, string ra, string cpf)
     {
         // Act & Assert
